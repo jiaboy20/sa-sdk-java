@@ -15,7 +15,10 @@ public class SensorsConst {
     /**
      * 当前JDK版本号，注意要和pom文件里面的version保持一致
      */
-    public static final String SDK_VERSION = "3.6.7";
+    // modify by jiangkun0928 for compatible with flog on 20240116 start
+//    public static final String SDK_VERSION = "3.6.7";
+    public static final String SDK_VERSION = "3.6.7_flog";
+    // modify by jiangkun0928 for compatible with flog on 20240116 end
     /**
      * 当前语言类型
      */

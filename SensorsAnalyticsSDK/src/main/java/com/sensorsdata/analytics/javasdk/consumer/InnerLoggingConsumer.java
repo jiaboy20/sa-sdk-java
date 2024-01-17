@@ -68,7 +68,14 @@ class InnerLoggingConsumer implements Consumer {
     }
 
     private String constructFileName(Date now) {
-        return filenamePrefix + "." + simpleDateFormat.format(now);
+        // modify by jiangkun0928 for compatible with flog on 20240116 start
+//        return filenamePrefix + "." + simpleDateFormat.format(now);
+        String logFileName = filenamePrefix;
+        if (logFileName.endsWith(".log")) {
+            logFileName = logFileName.substring(0, logFileName.length() - 4);
+        }
+        return logFileName + "." + simpleDateFormat.format(now) + ".log";
+        // modify by jiangkun0928 for compatible with flog on 20240116 end
     }
 
     @Override
