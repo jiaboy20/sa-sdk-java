@@ -63,7 +63,7 @@ public class ConcurrentLoggingConsumerTest {
     SensorsAnalytics sa = new SensorsAnalytics(consumer);
     Map<String, Object> properties = new HashMap<>();
     properties.put("test", "test");
-    properties.put("$project", "abc");
+    properties.put("$project", "default");
     properties.put("$token", "123");
     sa.track("123", true, "test", properties);
   }
@@ -74,7 +74,7 @@ public class ConcurrentLoggingConsumerTest {
     SensorsAnalytics sa = new SensorsAnalytics(consumer);
     Map<String, Object> properties = new HashMap<>();
     properties.put("test", "test");
-    properties.put("$project", "abc");
+    properties.put("$project", "default");
     properties.put("$token", "123");
     sa.track("123", true, "test01", properties);
     sa.track("123", true, "test01", properties);
@@ -86,7 +86,7 @@ public class ConcurrentLoggingConsumerTest {
     SensorsAnalytics sa = new SensorsAnalytics(consumer);
     Map<String, Object> properties = new HashMap<>();
     properties.put("test", "test");
-    properties.put("$project", "abc");
+    properties.put("$project", "default");
     properties.put("$token", "123");
     sa.track("123", true, "test01", properties);
     sa.track("123", true, "test01", properties);
@@ -98,7 +98,7 @@ public class ConcurrentLoggingConsumerTest {
     SensorsAnalytics sa = new SensorsAnalytics(consumer);
     Map<String, Object> properties = new HashMap<>();
     properties.put("test", "test");
-    properties.put("$project", "abc");
+    properties.put("$project", "default");
     properties.put("$token", "123");
     sa.track("123", true, "test01", properties);
     sa.track("123", true, "test01", properties);
@@ -110,7 +110,7 @@ public class ConcurrentLoggingConsumerTest {
     SensorsAnalytics sa = new SensorsAnalytics(consumer);
     Map<String, Object> properties = new HashMap<>();
     properties.put("test", "test");
-    properties.put("$project", "abc");
+    properties.put("$project", "default");
     properties.put("$token", "123");
     sa.track("123", true, "test01", properties);
     sa.track("123", true, "test01", properties);
@@ -122,7 +122,7 @@ public class ConcurrentLoggingConsumerTest {
     SensorsAnalytics sa = new SensorsAnalytics(consumer);
     Map<String, Object> properties = new HashMap<>();
     properties.put("test", "test");
-    properties.put("$project", "abc");
+    properties.put("$project", "default");
     properties.put("$token", "123");
     sa.track("123", true, "test01", properties);
     sa.track("123", true, "test01", properties);
@@ -134,7 +134,7 @@ public class ConcurrentLoggingConsumerTest {
     SensorsAnalytics sa = new SensorsAnalytics(consumer);
     Map<String, Object> properties = new HashMap<>();
     properties.put("test", "test");
-    properties.put("$project", "abc");
+    properties.put("$project", "default");
     properties.put("$token", "123");
     sa.track("123", true, "test01", properties);
     sa.track("123", true, "test01", properties);
